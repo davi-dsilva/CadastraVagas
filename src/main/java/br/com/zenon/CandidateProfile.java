@@ -6,20 +6,14 @@ public record CandidateProfile(
         Long id,
         String name,
         String lastName,
-        String email,
-        String phone,
         LocalDate birthDate,
+        int age,
         Address address, //Record Address
         String currentJobTitle,  // Cargo atual
         int yearsOfExperience,   // Anos de experiência
-        String linkedinUrl,      // Link do LinkedIn
-        String githubUrl,        // Link do GitHub / Portfólio
+      // Link do GitHub / Portfólio
         List<String> skills,     // Lista de competências (ex: Java, Spring, SQL)
         String resumeUrl         // Link para o currículo (PDF/Drive)
 ) {
-    public CandidateProfile {
-        if (email != null && !email.contains("@")) {
-            throw new IllegalArgumentException("E-mail inválido.");
-        }
-    }
+
 }
