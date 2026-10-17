@@ -9,9 +9,13 @@ public record CandidateProfile(
         String lastName,
         LocalDate birthDate,
         Long age,
+        String cpf,
+        Gender gender,
+
         Address address, //Record Address
         String currentJobTitle,  // Cargo atual
         int yearsOfExperience,   // Anos de experiência
+
       // Link do GitHub / Portfólio
         List<String> skills,     // Lista de competências (ex: Java, Spring, SQL)
         String resumeUrl ,
